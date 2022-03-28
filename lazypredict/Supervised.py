@@ -14,6 +14,7 @@ from sklearn.impute import SimpleImputer, MissingIndicator
 from sklearn.preprocessing import StandardScaler, OneHotEncoder, OrdinalEncoder
 from sklearn.compose import ColumnTransformer
 from sklearn.utils import all_estimators
+from sklearn.utils._mocking import CheckingClassifier
 from sklearn.base import RegressorMixin
 from sklearn.base import ClassifierMixin
 from sklearn.metrics import (
@@ -38,7 +39,7 @@ CLASSIFIERS = [est for est in all_estimators() if issubclass(est[1], ClassifierM
 REGRESSORS = [est for est in all_estimators() if issubclass(est[1], RegressorMixin)]
 
 removed_classifiers = [
-    ("CheckingClassifier", sklearn.utils._mocking.CheckingClassifier),
+    ("CheckingClassifier", CheckingClassifier),
     ("ClassifierChain", sklearn.multioutput.ClassifierChain),
     ("ComplementNB", sklearn.naive_bayes.ComplementNB),
     (
