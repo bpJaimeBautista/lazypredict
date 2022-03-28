@@ -78,7 +78,7 @@ removed_regressors = [
     ("MultiTaskElasticNet", sklearn.linear_model.MultiTaskElasticNet),
     ("MultiTaskElasticNetCV", sklearn.linear_model.MultiTaskElasticNet),
     ("MultiTaskLasso", sklearn.linear_model.MultiTaskLasso),
-    ("MultiTaskLassoCV", sklearn.linear_model.MultiTaskLassoCV),
+    #("MultiTaskLassoCV", sklearn.linear_model.MultiTaskLassoCV),
     ("PLSCanonical", sklearn.cross_decomposition.PLSCanonical),
     ("PLSRegression", sklearn.cross_decomposition.PLSRegression),
     ("RadiusNeighborsRegressor", sklearn.neighbors.RadiusNeighborsRegressor),
