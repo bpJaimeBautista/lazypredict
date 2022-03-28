@@ -84,7 +84,7 @@ removed_regressors = [
     ("RadiusNeighborsRegressor", sklearn.neighbors.RadiusNeighborsRegressor),
     ("RegressorChain", sklearn.multioutput.RegressorChain),
     ("VotingRegressor", sklearn.ensemble.VotingRegressor),
-    ("_SigmoidCalibration", sklearn.calibration._SigmoidCalibration),
+    #("_SigmoidCalibration", sklearn.calibration._SigmoidCalibration),
 ]
 
 for i in removed_regressors:
