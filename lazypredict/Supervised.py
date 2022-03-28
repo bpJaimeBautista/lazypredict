@@ -44,18 +44,18 @@ removed_classifiers = [
     ("ComplementNB", sklearn.naive_bayes.ComplementNB),
     (
         "GradientBoostingClassifier",
-        sklearn.ensemble.gradient_boosting.GradientBoostingClassifier,
+        sklearn.ensemble.GradientBoostingClassifier,
     ),
     (
         "GaussianProcessClassifier",
-        sklearn.gaussian_process.gpc.GaussianProcessClassifier,
+        sklearn.gaussian_process.GaussianProcessClassifier,
     ),
     (
         "HistGradientBoostingClassifier",
-        sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingClassifier,
+        sklearn.ensemble.HistGradientBoostingClassifier,
     ),
-    ("MLPClassifier", sklearn.neural_network.multilayer_perceptron.MLPClassifier),
-    ("LogisticRegressionCV", sklearn.linear_model.logistic.LogisticRegressionCV),
+    ("MLPClassifier", sklearn.neural_network.MLPClassifier),
+    ("LogisticRegressionCV", sklearn.linear_model.LogisticRegressionCV),
     ("MultiOutputClassifier", sklearn.multioutput.MultiOutputClassifier),
     ("MultinomialNB", sklearn.naive_bayes.MultinomialNB),
     ("OneVsOneClassifier", sklearn.multiclass.OneVsOneClassifier),
@@ -63,20 +63,20 @@ removed_classifiers = [
     ("OutputCodeClassifier", sklearn.multiclass.OutputCodeClassifier),
     (
         "RadiusNeighborsClassifier",
-        sklearn.neighbors.classification.RadiusNeighborsClassifier,
+        sklearn.neighbors.RadiusNeighborsClassifier,
     ),
-    ("VotingClassifier", sklearn.ensemble.voting.VotingClassifier),
+    ("VotingClassifier", sklearn.ensemble.VotingClassifier),
 ]
 
 removed_regressors = [
-    ("TheilSenRegressor", sklearn.linear_model.theil_sen.TheilSenRegressor),
+    ("TheilSenRegressor", sklearn.linear_model.TheilSenRegressor),
     ("ARDRegression", sklearn.linear_model.ARDRegression),
     ("CCA", sklearn.cross_decomposition.CCA),
     ("IsotonicRegression", sklearn.isotonic.IsotonicRegression),
     ("StackingRegressor",sklearn.ensemble.StackingRegressor),
     ("MultiOutputRegressor", sklearn.multioutput.MultiOutputRegressor),
     ("MultiTaskElasticNet", sklearn.linear_model.MultiTaskElasticNet),
-    ("MultiTaskElasticNetCV", sklearn.linear_model.MultiTaskElasticNetCV),
+    ("MultiTaskElasticNetCV", sklearn.linear_model.MultiTaskElasticNet),
     ("MultiTaskLasso", sklearn.linear_model.MultiTaskLasso),
     ("MultiTaskLassoCV", sklearn.linear_model.MultiTaskLassoCV),
     ("PLSCanonical", sklearn.cross_decomposition.PLSCanonical),
